@@ -1,0 +1,61 @@
+.inputContainer {
+  margin: 20px;
+}
+
+.inputContainer label {
+  display: block;
+  font-weight: bolder;
+  color: #373867;
+}
+
+.inputContainer input {
+  width: 98%;
+  height: 25px;
+  margin: 5px;
+  padding: 3px 7px;
+  border: 2px solid #373867;
+  background-color: white;
+  font-size: 17px;
+  color: #373867;
+}
+
+.inputContainer input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.inputContainer input:focus {
+  border-color: #373867;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  width: max-content;
+}
+
+.check label {
+  flex: 1;
+  color: #373867;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.check input {
+  flex: 2;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.error {
+  margin: 0px;
+  font-size: 14px;
+  color: #ff0303;
+  width: 250px;
+}
+
+.inputContainer .inputError {
+  border: 2px solid #ff0303;
+}

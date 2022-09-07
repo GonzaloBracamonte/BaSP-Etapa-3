@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #373867;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #AACE9B;
+}
+
+.links img {
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.links :nth-child(even) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.links img:hover{
+  box-shadow: inset 0 0 0 20px #000;
+}
+
+@media screen and (min-width: 768px) {
+  .links :nth-child(even) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

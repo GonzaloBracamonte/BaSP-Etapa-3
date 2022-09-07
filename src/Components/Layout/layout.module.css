@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 0;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  height: 100%;
+}

@@ -1,0 +1,22 @@
+.header {
+  color: #373867;
+  background-color: rgba(55, 56, 103, 0.1);
+  backdrop-filter: blur(8px);
+  font-size: 72px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.paragraph {
+  margin: 0%;
+}
+
+.container   {
+  width: 100%;
+  padding: 1%;
+  background-image: url('assets/images/home-img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

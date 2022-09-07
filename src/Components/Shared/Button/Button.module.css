@@ -1,0 +1,147 @@
+/*Button configs*/
+:root{
+  --box-shadow: #676767;
+  --grayish-navy: #373867;
+  --light-grayish-green: #AACE9B;
+  --grayish-navy-40: #37386766;
+  --grayish-navy-10: #3738671a;
+  --light-grayish-green-10: #3738671a;
+  --scarlet: #F33413;
+  --bright-green: #49A37B;
+
+  --button: 15px;
+  --button-weight: 600;
+}
+
+/*=== Standard btn ===*/
+.btn {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--light-grayish-green);
+  color: var(--grayish-navy);
+  font-size: var(--button);
+  font-weight: var(--button-weight);
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0.2em 0.5em -0.4em var(--box-shadow);
+  transition: 0.25s;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.6em 0.5em -0.4em var(--box-shadow);
+  transform: translateY(-0.2em);
+  outline: none;
+}
+
+.btn:active {
+  /* outline: -3px solid #AACE9B; */
+  background-color: transparent;
+  transform: none;
+  box-shadow: inset 0px 0px 0px 3px var(--bright-green);
+  outline: none;
+}
+
+.btn *,
+.btn *:any-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Variants*/
+.btnBlock {
+  display: block;
+  width: 100%;
+}
+
+.redBtn {
+  background-color: var(--scarlet);
+  color: white
+}
+
+.darkerBtn {
+  background-color: var(--bright-green);
+  color: var(--grayish-navy);
+}
+
+.redBtn:active {
+  box-shadow: inset 0px 0px 0px 3px var(--scarlet);
+  color: var(--grayish-navy);
+}
+
+/*=== Close btn ===*/
+.closeBtn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 5px;
+  padding: 0px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--scarlet);
+  color: #15162A;
+  font-size: var(--button);
+  font-weight: var(--button-weight);
+  font-family: inherit;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    box-shadow 400ms cubic-bezier(.2,0,.7,1),
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  box-shadow: 0 0 1px 5px rgba(243, 51, 18, 0.4),
+  0 0 1px 10px rgba(243, 51, 18, 0.1),
+  0 0 1px 15px rgba(243, 51, 18, 0.1);
+  outline: none;
+}
+
+.closeBtn:active{
+  box-shadow: none;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 3px var(--scarlet);
+}
+
+/*=== Edit btn ===*/
+.editBtn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 5px;
+  padding: 0px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--light-grayish-green);
+  color: var(--grayish-navy);
+  font-size: var(--button);
+  font-weight: var(--button-weight);
+  font-family: inherit;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    box-shadow 400ms cubic-bezier(.2,0,.7,1),
+}
+
+.editBtn:hover,
+.editBtn:focus {
+  box-shadow: 0 0 1px 5px rgba(170, 243, 18, 0.4),
+  0 0 1px 10px rgba(170, 243, 18, 0.1),
+  0 0 1px 15px rgba(168, 243, 18, 0.1);
+  outline: none;
+}
+
+.editBtn:active{
+  box-shadow: none;
+  background-color: transparent;
+  box-shadow: inset 0px 0px 0px 3px var(--light-grayish-green);
+}
+

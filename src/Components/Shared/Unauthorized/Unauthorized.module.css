@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  background-image: url('assets/images/area-51-sign.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+
+.container h2 {
+  position: relative;
+  top: 8%;
+  margin-bottom: 20px;
+  color: #373867;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container p {
+  position: relative;
+  top: 8%;
+  margin: 0px;
+  color: #373867;
+  font-size: 24px;
+  text-align: center;
+}
+
+.container a {
+  position: relative;
+  top: 8%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 20px 10px;
+    background-size: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    background-size: 40%;
+  }
+}

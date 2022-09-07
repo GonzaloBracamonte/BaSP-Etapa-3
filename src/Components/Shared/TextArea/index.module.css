@@ -1,0 +1,15 @@
+.textAreaContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+.labelTextArea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.textAreaBox{
+    border-radius: 4px;
+    resize: none;
+    width: 260px;
+}
